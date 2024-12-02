@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">  
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #333;
+          }        
+        
+        .contact-container {
+            width: 600px;
+            margin: 3rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
+        .contact-container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #212328;
+        }
+        
+        .contact-container p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+        
+        .contact-form label {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        .contact-form input, .contact-form textarea {
+            width: 95%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #7b879a;
+          }
+        
+        .submit input {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            background: #494b50;
+            color: white;
+        }
+        
+        .submit input:hover {
+            background: #44484f;
+        }
+    </style>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="x tdnav">
+            <table class="navmenu" style="margin-top: 27px;">
+                <tr>
+                    <td><a href="aboutus.html">About us</a></td>
+                    <td><a href="reviews.html">Success Stories</a></td>
+                    <td><a href="#" style="background-color: rgb(37, 37, 37);">Contact us</a></td>
+                    <td><a href="resources.html">Resources</a></td>
+                </tr>
+            </table>
+        </div>
+        <a href="homepage.html"><img src="files/logobg.png" height="70px" style="margin: 7px 20px;"></a>
+    </header>
+
+    
+    <section class="contact-container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Fill out the form below and we’ll get back to you shortly.</p>
+
+      <form>
+        <div class="contact-form">
+            <label for="type">Message type</label> <br>
+
+            <select name="type" style="width:100%; padding: 0.8rem;border: 1px solid #ccc;" required>
+                <option value="" selected>Select message type</option>
+                <option value="feedback">Feedback</option>
+                <option value="review">Review</option> 
+            </select> <br> <br>
+            <label for="name">Name</label> <br>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <br>
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <br>
+            <label for="message">Message</label> <br>
+        
+            <textarea id="message" name="message" rows="5" cols="60" style="resize:none;" placeholder="Your Message..." required></textarea>
+        </div>
+        <br>
+        <div class="submit" >
+            <input type="submit" value="Submit message" width="100%">
+        </div>
+      </form>
+    </section>
+    <section style="text-align: center;">
+        <p>Or email us directly at <a href="mailto:master.face.course@gmail.com">master.face.course@gmail.com</a></p>
+    </section>
+
+    
+    <section class="footerh" style="display: flex;">
+        <p style="color: white; margin:15px; font-size:x-large;">© 2024 MasterFace</p>
+        <div style="margin-left: 33%;">
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://www.instagram.com/master.f4c3" target="_blank"><img src="files/insta.png" class="footerimg"></a>
+                    </td>
+                    <td>
+                        <a href="https://youtube.com/@masterface-t9t" target="_blank"><img src="files/youtube.png" class="footerimg"></a>
+                    </td>
+                    <td>  
+                        <a href="https://x.com/master_f4c3" target="_blank"><img src="files/twitter.png" class="footerimg"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
